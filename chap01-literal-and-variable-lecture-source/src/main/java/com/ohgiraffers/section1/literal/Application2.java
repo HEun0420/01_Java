@@ -8,52 +8,52 @@ public class Application2 {
 
         // 정수와 정수의 연산
         System.out.println("=========== 정수와 정수의 연산 ===========");
-        System.out.println(123 + 456);
-        System.out.println(123 - 23);
-        System.out.println(123 * 10);
-        System.out.println(123 / 10); /// 나누기를 한 몫의 값
+        System.out.println(123 + 456); //579
+        System.out.println(123 - 23); // 100
+        System.out.println(123 * 10); //1230
+        System.out.println(123 / 10); /// 나누기를 한 몫의 값 // 12
         System.out.println(123 % 10); /// 나누기를 한 나머지 값 => 12 ....3
 
         // 실수와 실수의 연산
         System.out.println("=========== 실수와 실의 연산 ===========");
-        System.out.println(1.23 + 1.23);
-        System.out.println(1.23 - 0.23); //계산의 결과는 실수 형태로 나온다
-        System.out.println(1.23 * 10);
-        System.out.println(1.23 / 10);
-        System.out.println(1.23 % 1.0);
+        System.out.println(1.23 + 1.23); // 2.46
+        System.out.println(1.23 - 0.23); //계산의 결과는 실수 형태로 나온다 // 1.0
+        System.out.println(1.23 * 10); // 12.3
+        System.out.println(1.23 / 10); // 0.123
+        System.out.println(1.23 % 1.0); // 0.299999999999998
 
         // 정수와 실수의 연산
         System.out.println("=========== 정수와 실수의 연산 ===========");
-        System.out.println(123 + 0.5); // 실수
-        System.out.println(123 - 0.5); // 실수
-        System.out.println(123 * 0.5); // 실수
-        System.out.println(123 / 0.5); //실수
-        System.out.println(123 % 0.5); //실수
+        System.out.println(123 + 0.5); // 실수 // 123.5
+        System.out.println(123 - 0.5); // 실수 // 122.5
+        System.out.println(123 * 0.5); // 실수 // 61.5
+        System.out.println(123 / 0.5); //실수 // 246.0
+        System.out.println(123 % 0.5); //실수 // 0.0
 
         // 문자와 문자의 연산
         // 문자는 내부적으로 숫자로 인식되어 연산된다
         System.out.println("=========== 문자와 문자의 연산 ===========");
-        System.out.println('a' + 'b');
-        System.out.println('a' - 'b');
-        System.out.println('a' * 'b');
-        System.out.println('a' / 'b');
-        System.out.println('a' % 'b');
+        System.out.println('a' + 'b'); // 195
+        System.out.println('a' - 'b'); // -1
+        System.out.println('a' * 'b'); // 9506
+        System.out.println('a' / 'b'); // 0
+        System.out.println('a' % 'b'); // 97
 
         //문자와 정수의 연산
         System.out.println("=========== 문자와 정수의 연산 ===========");
-        System.out.println('a' + 1);
-        System.out.println('a' - 1);
-        System.out.println('a' * 10);
-        System.out.println('a' / 10);
-        System.out.println('a' % 10);
+        System.out.println('a' + 1); // 98
+        System.out.println('a' - 1); // 96
+        System.out.println('a' * 10); // 970
+        System.out.println('a' / 10); // 9
+        System.out.println('a' % 10); // 7
 
         //문자와 실수의 연산
         System.out.println("=========== 문자와 실수의 연산 ===========");
-        System.out.println('a' + 1.0);
-        System.out.println('a' - 1.0);
-        System.out.println('a' * 10.0);
-        System.out.println('a' / 10.0);
-        System.out.println('a' % 10.0);
+        System.out.println('a' + 1.0); // 98.0
+        System.out.println('a' - 1.0); // 96.0
+        System.out.println('a' * 10.0); // 970.0
+        System.out.println('a' / 10.0); // 9.7
+        System.out.println('a' % 10.0); // 7.0
 
         /*
         *결론은 문자는 내부적으로 숫자 취급을 한다.
