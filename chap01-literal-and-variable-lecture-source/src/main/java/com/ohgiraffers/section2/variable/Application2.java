@@ -71,21 +71,21 @@ public class Application2 {
         int point = 100;
 
         System.out.println("========== 변수에 저장된 값 출력 ============");
-        System.out.println("bnum의 값 : " + bnum);
-        System.out.println("snum의 값 : " + snum);
-        System.out.println("inum의 값 : " + inum);
-        System.out.println("lnum의 값 : " + lnum);
+        System.out.println("bnum의 값 : " + bnum); // 1
+        System.out.println("snum의 값 : " + snum); // 2
+        System.out.println("inum의 값 : " + inum); // 4
+        System.out.println("lnum의 값 : " + lnum); // 8
 
-        System.out.println("fnum의 값 " + fnum);
-        System.out.println("dnum의 값 " + dnum);
+        System.out.println("fnum의 값 " + fnum); // 4.0
+        System.out.println("dnum의 값 " + dnum); // 8.0
 
         System.out.println("ch의 값 : " + ch); // 문자형식으로 초기화 했던 변수 'a'
         System.out.println("ch2의 값 " + ch2); // 숫자형식으로 초기화 했던 변수 97
 
-        System.out.println("isTrue의 값 " + isTrue);
+        System.out.println("isTrue의 값 " + isTrue); // false
         point = point + 10;
-        System.out.println("ponint = " + point);
-        System.out.println("str = " + str);
+        System.out.println("ponint = " + point); // 110
+        System.out.println("str = " + str); // 안녕하세요.
 
         // * 줄 정렬 = ctrl alt l
 

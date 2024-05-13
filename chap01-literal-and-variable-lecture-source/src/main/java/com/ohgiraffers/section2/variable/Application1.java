@@ -51,7 +51,7 @@ public class Application1 {
         System.out.println();
 
         System.out.println("============= 변수에 저장된 값 변경 테스트 ============");
-        // 변수는 하나의 갓ㅂ을 저장하고 사용하기 위한 공간이기 보다, 변하는 값을 저장하기 위한 공간이다.
+        // 변수는 하나의 값을 저장하고 사용하기 위한 공간이기 보다, 변하는 값을 저장하기 위한 공간이다.
         int sum = 0;
 
         sum = sum + 10;
@@ -62,12 +62,6 @@ public class Application1 {
 
         sum = sum + 10;
         System.out.println("sum에 10를 더하면 현재 sum의 값은 ? " + sum); // 30
-
-
-
-
-
-
 
 
 

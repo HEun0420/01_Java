@@ -85,7 +85,6 @@ public class Application3 {
         // boolean isDead = false; 부정형보다는 긍정혀이 더 나은 방식이다.
         boolean isTrue = true;
 
-
-
+        
     }
 }
