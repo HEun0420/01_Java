@@ -65,6 +65,5 @@ public class Application1 {
         System.out.println("longMulti =" + longMulti); // 700000000000
 
 
-
     }
 }

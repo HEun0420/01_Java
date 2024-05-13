@@ -44,5 +44,6 @@ public class Application1 {
         // int MAX_AGE; // 상수도 변수이고, 변수명이 지정되어 있어있기 때문에 같은 변수명으로 다시 선언될 수 없다.
 
 
+
     }
 }
