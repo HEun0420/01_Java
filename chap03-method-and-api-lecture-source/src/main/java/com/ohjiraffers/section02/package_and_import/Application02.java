@@ -14,6 +14,8 @@ public class Application02 {
         *
          */
 
+        // nonstatic 메서드 경우
+
         Calculator calc = new Calculator();
         int min = calc.nonStaticNumber0f(50, 60);
 

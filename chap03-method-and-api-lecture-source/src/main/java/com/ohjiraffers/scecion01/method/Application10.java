@@ -34,5 +34,7 @@ public class Application10 {
 
         int divide2 = Calculator.staticDivide(num1, num2);
         System.out.println("num1 % num2의 값은: " + divide2); // 1
+
+        // remainder
     }
 }

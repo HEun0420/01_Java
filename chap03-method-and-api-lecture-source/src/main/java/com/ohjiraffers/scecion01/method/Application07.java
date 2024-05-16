@@ -19,27 +19,27 @@ public class Application07 {
 
     // 두수를 더한 결과를 반환하는 메서드
     public int plusTwoNumber(int first, int second) {
-
-        return first + second;
+        return first + second; // 30
 
     }
     // 두수를 뺀 결과를 반환하는 메서드
     public int minusTwoNumber(int first, int second) {
-
-        return first - second;
+        return first - second; // 10
 
     }
 
     // 두수를 곱한 결과를 반환하는 메서드
     public int multipleTwonumber(int first, int second) {
-
-        return first * second;
+        return first * second; // 200
 
     }
     // 두수를 나눈 결과를 반환하는 메서드
     public int divideTwonubver(int first, int second) {
+        return first / second; // 2
 
-        return first / second;
+
+
+
 
     }
 }
