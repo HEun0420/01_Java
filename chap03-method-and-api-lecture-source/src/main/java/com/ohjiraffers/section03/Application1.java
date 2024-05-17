@@ -23,10 +23,10 @@ public class Application1 {
         * 모든 매서드는 static 메소드로 작성되어있다.
          */
 
-        System.out.println("-7의 절대값 : " + (java.lang.Math.abs(-7))); // 7
 
         // java.lang 패키지는 자주 사용하기 때문에
         // 컴파일러가 import java.lang.*;를 자동으로 추가해준다.
+        System.out.println("-7의 절대값 : " + (java.lang.Math.abs(-7))); // 7
         System.out.println("-1.25의 절대값: " + Math.abs(1-25)); //24
 
         // 최대값 최소값

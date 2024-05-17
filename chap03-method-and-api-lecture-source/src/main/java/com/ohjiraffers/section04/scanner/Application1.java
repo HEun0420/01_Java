@@ -71,11 +71,15 @@ public class Application1 {
         *
         * nextBoolean() : 입력받은 값을 boolean형으로 변환한다.
          */
-//
-//        System.out.println("참과 거짓 중에 한가지 true or false로 입력해주세요");
-//        System.out.println("나는 복습을 잘하고 있다.");
-//        boolean isTrue = sc.nextBoolean();
-//        System.out.println("입력하신 논리 값은 " + isTrue + " 입니다");
+
+        System.out.println("참과 거짓 중에 한가지 true or false로 입력해주세요");
+        System.out.println("나는 복습을 잘하고 있다.");
+        boolean isTrue = sc.nextBoolean();
+        System.out.println("입력하신 논리 값은 " + isTrue + " 입니다");
+
+        // 에러 발생
+
+        sc.nextLine(); // 이거 사용해야함
 
         System.out.println("아무 문자나 입력하세요.");
         String str = sc.next();
