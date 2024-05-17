@@ -21,6 +21,12 @@ public class Application1 {
 //        cIfElse.tetsSimpleIfElseStatement();
 //        cIfElse.testNestedIfElseIfStatement2();
 
+//          D_Switch dSwich= new D_Swich();
+//          dSwitch.testSimpleSwitchStatement();
+
+        D_Swich dSwitch= new D_Swich();
+        dSwitch.testSwitchVendingMachine();
+
 
     }
 }
