@@ -113,3 +113,4 @@ public class C_IfElse {
         System.out.println(name + " 학생의 점수는 " + point + "이고, 등급은" + grade + "입니다.");
     }
 }
+

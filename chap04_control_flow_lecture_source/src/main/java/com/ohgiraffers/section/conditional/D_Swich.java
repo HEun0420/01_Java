@@ -25,42 +25,42 @@ public class D_Swich {
     * 두 숫자의 연산 결과를 출력해보는 간단한 계산기 만들기
      */
 
-//    public void testSimpleSwitchStatement() {
-//        Scanner sc = new Scanner(System.in);
-//        System.out.println("첫번째 정수 입력 : ");
-//        int first = sc.nextInt();
-//
-//        System.out.println("두번째 정수 입력 : ");
-//        int second = sc.nextInt();
-//
-//        System.out.println("연산 기호 입력(+,-,*,/,%) : ");
-//        char op = sc.next().charAt(0);
-//
-//        // 연산 결과를 저장할 변수
-//        int result = 0;
-//
-//        switch (op){
-//            case '+' :
-//                result = first + second;
-//                break;
-//            case '-':
-//                result = first - second;
-//                break;
-//            case '*':
-//                result = first* second;
-//                break;
-//            case '/':
-//                result = first/second;
-//                break;
-//            case '%':
-//                result= first%second;
-//                break;
-//
-//                /* 산술 문자에 대한 처리는 생략하였음*/
-//        }
-//        System.out.println(first + " " + op + " " + second + "=" + result);
-//    }
-//        public void testSwitchVendingMachine(){
+    public void testSimpleSwitchStatement() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("첫번째 정수 입력 : ");
+        int first = sc.nextInt();
+
+        System.out.println("두번째 정수 입력 : ");
+        int second = sc.nextInt();
+
+        System.out.println("연산 기호 입력(+,-,*,/,%) : ");
+        char op = sc.next().charAt(0);
+
+        // 연산 결과를 저장할 변수
+        int result = 0;
+
+        switch (op){
+            case '+' :
+                result = first + second;
+                break;
+            case '-':
+                result = first - second;
+                break;
+            case '*':
+                result = first* second;
+                break;
+            case '/':
+                result = first/second;
+                break;
+            case '%':
+                result= first%second;
+                break;
+
+                /* 산술 문자에 대한 처리는 생략하였음*/
+        }
+        System.out.println(first + " " + op + " " + second + "=" + result);
+    }
+        public void testSwitchVendingMachine(){
 
         /*
         * switch문을 이용해서 문자열 값 비교 및 break에 대한 테스트
@@ -68,41 +68,41 @@ public class D_Swich {
         * 2. break를 사용하지 않으면 멈추지 않고 계속 실행 구문을 동작시킨다.
          */
 
-//            // switch문을 이용한 간단한 자판기
-//            System.out.println("==== Ohgiraffers vending machine ====");
-//            System.out.println("사이다 콜라 환타 박카스 핫식스");
-//            System.out.println("===================");
-//            System.out.println("음료를 선택해 주세요 : ");
-//
-//            Scanner sc = new Scanner(System.in);
-//            String selectedDrink = sc.nextLine();
-//
-//            int price = 0;
-//
-//            switch (selectedDrink){
-//                case "사이다":
-//                    System.out.println("사이다를 선택하셧습니다.");
-//                    price = 500;
-//                    break;
-//                case "콜라":
-//                    System.out.println("콜라를 선택하셧습니다.");
-//                    price = 600;
-//                    break;
-//                case "환타":
-//                    System.out.println("환타를 선택하셧습니다.");
-//                    price = 700;
-//                    break;
-//                case "박카스":
-//                    System.out.println("박카스를 선택하셧습니다.");
-//                    price = 800;
-//                    break;
-//                case "핫식스":
-//                    System.out.println("핫식스를 선택하셧습니다.");
-//                    price = 900;
-//                    break;
-//            }
-//            System.out.println(price + "원 입니다.");
-//}
+            // switch문을 이용한 간단한 자판기
+            System.out.println("==== Ohgiraffers vending machine ====");
+            System.out.println("사이다 콜라 환타 박카스 핫식스");
+            System.out.println("===================");
+            System.out.println("음료를 선택해 주세요 : ");
+
+            Scanner sc = new Scanner(System.in);
+            String selectedDrink = sc.nextLine();
+
+            int price = 0;
+
+            switch (selectedDrink){
+                case "사이다":
+                    System.out.println("사이다를 선택하셧습니다.");
+                    price = 500;
+                    break;
+                case "콜라":
+                    System.out.println("콜라를 선택하셧습니다.");
+                    price = 600;
+                    break;
+                case "환타":
+                    System.out.println("환타를 선택하셧습니다.");
+                    price = 700;
+                    break;
+                case "박카스":
+                    System.out.println("박카스를 선택하셧습니다.");
+                    price = 800;
+                    break;
+                case "핫식스":
+                    System.out.println("핫식스를 선택하셧습니다.");
+                    price = 900;
+                    break;
+            }
+            System.out.println(price + "원 입니다.");
+}
         public void testSwitchstory(){
 
             System.out.println("산 속에서 나무를 하던 나무꾼이 연못에 도끼를 빠뜨리고 말았다.");
@@ -116,13 +116,13 @@ public class D_Swich {
 
 
             switch (selectacx){
-                case "금도끼":
+                case "1","금도끼":
                     System.out.println("이런 거짓말쟁이!! 너에게는 아무 도끼도 줄 수 없구나, 이 욕심쟁이야!!");
                     break;
-                case "은도끼":
+                case "2","은도끼":
                     System.out.println("욕심이 과하지는 않지만, 넌 거짓말을 하고 있구나!! 어서 썩 사라지거라");
                     break;
-                case "쇠도끼":
+                case "3","쇠도끼":
                     System.out.println("오호~ 정직하구나 금도끼, 은도끼, 쇠도끼 전부 다 가져가거라~");
                     break;
                 default:

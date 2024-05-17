@@ -37,9 +37,9 @@ public class A_If {
 
 
    }
-//
+
 //        // 중첩된 if 문 실행 흐름 확인
-//    public void testNestedIfStatment() {
+//    // public void testNestedIfStatment() {
 //        // 정수 한개를 입력받아
 //        Scanner sc = new Scanner(System.in);
 //
@@ -60,32 +60,32 @@ public class A_If {
 
 
 //    }
-//
-//    // 중첩된 if-else 문 실행 흐름 확인
-//    public void testNestedIfStatment() {
-//
-//        // 숫자를 하나 입력 받아
-//        Scanner sc = new Scanner(System.in);
-//        System.out.println("정수를 하나 입력하세요 : ");
-//        int num = sc.nextInt();
-//
-//        //양수이면 "입력하신 숫자는 양수입니다." 출력하고
-//        // 음수이면 "입력하신 숫자는 음수 입니다." 출력하고
-//        if(num!=0){
-//            if(num>0){
-//                System.out.println("입력하신 숫자는 양수입니다.");
-//            } else {
-//                System.out.println("입력하신 숫자는 음수 입니다.");
-//            }
-//            // 단, 0 이면 "0 입니다"라고 출력하세요
-//        } else{
-//                System.out.println("0 입니다.");
-//            }
-//        // 조건과 상관없이 프로그램이 종료될 때 "프로그램을 종료합니다"라고 출력되도록 한다.
-//        System.out.println("프로그램을 종료합니다.");
+
+    // 중첩된 if-else 문 실행 흐름 확인
+    public void testNestedIfStatment() {
+
+        // 숫자를 하나 입력 받아
+        Scanner sc = new Scanner(System.in);
+        System.out.println("정수를 하나 입력하세요 : ");
+        int num = sc.nextInt();
+
+        //양수이면 "입력하신 숫자는 양수입니다." 출력하고
+        // 음수이면 "입력하신 숫자는 음수 입니다." 출력하고
+        if(num!=0){
+            if(num>0){
+                System.out.println("입력하신 숫자는 양수입니다.");
+            } else {
+                System.out.println("입력하신 숫자는 음수 입니다.");
+            }
+            // 단, 0 이면 "0 입니다"라고 출력하세요
+        } else{
+                System.out.println("0 입니다.");
+            }
+        // 조건과 상관없이 프로그램이 종료될 때 "프로그램을 종료합니다"라고 출력되도록 한다.
+        System.out.println("프로그램을 종료합니다.");
 
 
 
-//    }
+    }
 
 }
