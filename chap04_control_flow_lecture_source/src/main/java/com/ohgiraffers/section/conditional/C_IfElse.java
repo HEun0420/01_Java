@@ -5,23 +5,23 @@ import java.util.Scanner;
 public class C_IfElse {
 
     /*
-    * [if-else-it문 표현식]
-    *
-    * if([조건식1]) {
-    *   // 조건식1이 true일 때 실행할 명령문
-    * } else if([조건식2]) {
-    *   // 조건식1이 false이고, 조건식2가 true일 때 실행할 명령문
-    * } elst {
-    *   // 조건식1 false이고, 조건식2가 false일 때 실행할 명령문
-    * }
-    *
-    * if-else-if문은 조건식 1의 결과 값이 참(true)이면 if {} 안에 있는 코드를 실행하고,
-    * 조건식 1일 false이면 조건식 2를 확인하여 참(true)이면 else if {} 안에 있는 코드를 실행한다.
-    * 조건식 1과 조건식 2가 결과값이 모두 거짓(false)이면 else {} 안에 있는 코드를 실행한다.
+     * [if-else-it문 표현식]
+     *
+     * if([조건식1]) {
+     *   // 조건식1이 true일 때 실행할 명령문
+     * } else if([조건식2]) {
+     *   // 조건식1이 false이고, 조건식2가 true일 때 실행할 명령문
+     * } elst {
+     *   // 조건식1 false이고, 조건식2가 false일 때 실행할 명령문
+     * }
+     *
+     * if-else-if문은 조건식 1의 결과 값이 참(true)이면 if {} 안에 있는 코드를 실행하고,
+     * 조건식 1일 false이면 조건식 2를 확인하여 참(true)이면 else if {} 안에 있는 코드를 실행한다.
+     * 조건식 1과 조건식 2가 결과값이 모두 거짓(false)이면 else {} 안에 있는 코드를 실행한다.
      */
 
     /*
-    * 금도기 은도끼 동화에서 산신령이 어떤 도끼가 나무꾼의 도끼인지 물어보는 시나리오
+     * 금도기 은도끼 동화에서 산신령이 어떤 도끼가 나무꾼의 도끼인지 물어보는 시나리오
      */
 
     public void tetsSimpleIfElseStatement() {
@@ -31,14 +31,14 @@ public class C_IfElse {
 
         System.out.println("어느 도끼가 너의 도끼이냐 (1. 금도끼 2. 은도끼 3. 쇠도끼");
 
-        Scanner sc =new Scanner(System.in);
-        int answer =sc.nextInt(); // 1, 2, 3 중에 받아온다.
+        Scanner sc = new Scanner(System.in);
+        int answer = sc.nextInt(); // 1, 2, 3 중에 받아온다.
 
-        if(answer == 1) {
+        if (answer == 1) {
             System.out.println("이런 거짓말쟁이!! 너에게는 아무 도끼도 줄 수 없구나, 이 욕심쟁이야!!");
-        } else if(answer == 2) {
+        } else if (answer == 2) {
             System.out.println("욕심이 과하지는 않지만, 넌 거짓말을 하고 있구나!! 어서 썩 사라지거라");
-        } else if(answer== 3){
+        } else if (answer == 3) {
             System.out.println("오호~ 정직하구나 금도끼, 은도끼, 쇠도끼 전부 다 가져가거라~");
         } else {
             System.out.println("잘못 입력했구나. 돌아가거라 ~");
@@ -47,5 +47,69 @@ public class C_IfElse {
 
     }
 
+    public void testNestedIfElseIfStatement() {
+        /* 필기
+         * ohgiraffers 대학의 김xx 교수님은 학생들 시험 성적을 수기로 걔산해서 학점 등겁을 매기는 채점방싱르 사용하고 있다.
+         * 90점 이상이면 'A' , 80점 이상이면 'B'. 70점 이상이면 'C', 60점 이상이면 'D'를
+         * 60점 미만일 경우에는 'F'를 학점 등급으로하는 기준이다.
+         *
+         * 추가로 각 등급의 중간점수(95, 85,75...)인 경우 '+'를 붙여서 세분화하다보니 신경쓸게 이만저만 아니다.
+         * 그래서 학생의 이름과 점수를 입력하면 자동으로 학점 등급이 계산되는 프로그램을 만들기로 했다
+         */
 
+        String name = "기본 이름";
+        int point = 100;
+        String grade = "F";
+
+        System.out.println(name + " 학생의 점수는 " + point + "이고, 등급은" + grade + "입니다.");
+
+        Scanner sc = new Scanner(System.in);
+
+
+    }
+
+    public void testNestedIfElseIfStatement2() {
+        /* 필기
+         * ohgiraffers 대학의 김xx 교수님은 학생들 시험 성적을 수기로 걔산해서 학점 등겁을 매기는 채점방싱르 사용하고 있다.
+         * 90점 이상이면 'A' , 80점 이상이면 'B'. 70점 이상이면 'C', 60점 이상이면 'D'를
+         * 60점 미만일 경우에는 'F'를 학점 등급으로하는 기준이다.
+         *
+         * 추가로 각 등급의 중간점수(95, 85,75...)인 경우 '+'를 붙여서 세분화하다보니 신경쓸게 이만저만 아니다.
+         * 그래서 학생의 이름과 점수를 입력하면 자동으로 학점 등급이 계산되는 프로그램을 만들기로 했다
+         */
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("학생의 이름을 입력하세요.");
+        String name = sc.nextLine();
+        System.out.println("학생의 점수을 입력하세요.");
+        int point = sc.nextInt();
+        String grade;
+
+
+        if (point >= 90) {
+            grade = "A";
+            if (point >= 98) {
+                grade += "+"; // grade = "A"+ "+"
+
+            }
+        } else if (point >= 80) {
+            grade = "B";
+            if (point >= 85) {
+                grade += "+";
+            }
+        } else if (point >= 70) {
+            grade = "C";
+            if (point >= 75) {
+                grade += "+";
+            }
+        } else if (point >= 60) {
+            grade = "D";
+            if (point >= 65) {
+                grade += "+";
+            }
+        } else {
+            grade = "F";
+        }
+        System.out.println(name + " 학생의 점수는 " + point + "이고, 등급은" + grade + "입니다.");
+    }
 }

@@ -16,9 +16,11 @@ public class Application1 {
 //
 //        bIfElse.testSimpleIfElesStatement();
 
-        C_IfElse cIfElse =  new C_IfElse(); //
+//        C_IfElse cIfElse =  new C_IfElse(); //
+//
+//        cIfElse.tetsSimpleIfElseStatement();
+//        cIfElse.testNestedIfElseIfStatement2();
 
-        cIfElse.tetsSimpleIfElseStatement();
 
     }
 }
