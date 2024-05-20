@@ -13,7 +13,8 @@ public class Application01 {
 
         A_nestedFor a_nestedFor= new A_nestedFor();
 //        a_nestedFor.printUpgradeGugudanFromTwoToNine();
-//        a_nestedFor.printStar();
+//        a_nestedFor.pirintStarInputRowTimes();
+//        a_nestedFor.printStar(5);
 //        a_nestedFor.printTriangleStars();
 
         B_while b_while = new B_while();
@@ -25,8 +26,13 @@ public class Application01 {
 
         C_doWhile c_doWhile = new C_doWhile();
 //        c_doWhile.testSimpleDoWhilestaement();
-        c_doWhile.testDoWhileExample();
+//        c_doWhile.testDoWhileExample();
 
+
+        Practice01 practice01= new Practice01();
+//        practice01.starNum1();
+//        practice01.starNum2();
+        practice01.starNum3();
 
 
 

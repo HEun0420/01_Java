@@ -7,7 +7,7 @@ public class C_doWhile {
     /*
     * [do_while문 표현식]
     *
-    * [초기식]:
+    * [초기식]
     *
     * do {
     * //반복할 코드
@@ -29,7 +29,7 @@ public void testSimpleDoWhilestaement () {
 public void testDoWhileExample(){
 
     /*
-    * 키보드로 무자열을 입력받아 반복적으로 출력
+    * 키보드로 문자열을 입력받아 반복적으로 출력
      */
     Scanner sc = new Scanner(System.in);
 
@@ -46,7 +46,7 @@ public void testDoWhileExample(){
 
     } while (!str.equals("exit"));
     System.out.println("프로그램을 종료합니다.");
-}
+}   //==> 멍게, 해삼, 말미잘 등등 한 문자씩 계속 입력 가능. 나오고 싶으면 exit를 입력.
 
 
 }

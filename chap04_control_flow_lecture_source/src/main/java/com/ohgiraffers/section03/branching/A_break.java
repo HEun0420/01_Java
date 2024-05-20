@@ -8,7 +8,7 @@ public class A_break {
     * 해당 반복문을 빠져 나올 때 사용하며,
     * 반복문의 조건문 판단 결과와 상관 없이 반목문을 빠져나올 때 사용한다.
     * 일반적으로 if(조건식){break;}처럼 사용한다.
-    * sitch문은 반복문은 아니지만 예외적으로 사용된다.
+    * switch문은 반복문은 아니지만 예외적으로 사용된다.
      */
 
     public void testSimpleBreakStament() {
@@ -22,7 +22,7 @@ public class A_break {
 
             sum += i;
 
-            // break무으로 반복문 빠져나오기
+            // break문으로 반복문 빠져나오기
             if( i == 100) {
                 break;
             }
@@ -54,7 +54,10 @@ public class A_break {
             }
 
         }
-    }
+    } // n*1~ n*5까지만 출력
+
+
+
 public void testJumpBreak(){
 
         label:

@@ -57,7 +57,7 @@ public class B_while {
             char ch= str.charAt(i);
 
             System.out.println(i+ ":" +ch);
-        }
+        }   /// mary ==> 0: m, 1: a, 2: r, 3 :y
 
         System.out.println("=======while 문 ========");
         int index = 0;

@@ -9,12 +9,12 @@ public class Application {
         A_break a_break = new A_break();
 //        a_break.testSimpleBreakStament();
 //        a_break.testSimpleBreakStatment2();
-//        a_break.testJumpBreak();
+        a_break.testJumpBreak();
 
         B_continue b_continue = new B_continue();
 //        b_continue.testSimpleContinueStament();
 //        b_continue.testSimpleContinueStament2();
-        b_continue.testJumpContinue();
+//        b_continue.testJumpContinue();
 
 
 
