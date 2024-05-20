@@ -1,4 +1,4 @@
-package com.ohgiraffers.section.conditional;
+package com.ohgiraffers.section01.conditional;
 
 public class Application1 {
     // 실행용 클래스
