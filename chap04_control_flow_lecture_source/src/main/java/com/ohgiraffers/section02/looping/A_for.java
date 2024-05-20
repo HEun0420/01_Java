@@ -7,6 +7,18 @@ import java.util.Scanner;
 
 public class A_for {
 
+    public void testExample0(){
+
+        /*
+        * "안녕하세요"를 5번 출력하기
+         */
+
+        System.out.println("안녕하세요.");
+
+    }
+
+
+
     public void testSimpleForStatment() {
 
         /*

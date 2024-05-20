@@ -9,8 +9,12 @@ public class Application01 {
         //  a_for.textExample2();
 //        a_for.testExample3();
 //        a_for.printSimpleGugudan();
-        a_for.testExample4();
-    }
+//        a_for.testExample4();
 
+        A_nestedFor a_nestedFor= new A_nestedFor();
+//        a_nestedFor.printUpgradeGugudanFromTwoToNine();
+//        a_nestedFor.printStar();
+        a_nestedFor.printTriangleStars();
+ }
 
 }
