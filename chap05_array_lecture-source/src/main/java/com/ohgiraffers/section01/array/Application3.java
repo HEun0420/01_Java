@@ -53,8 +53,10 @@ public class Application3 {
         for (int i = 0; i < scarr.length; i++) {
             System.out.println("scarr["+ i +"]의 값: "+scarr[i]);
         }
-
-
+        ///scarr[0]의 값: apple
+        //scarr[1]의 값: banana
+        //scarr[2]의 값: orange
+        //scarr[3]의 값: melon
 
     }
 

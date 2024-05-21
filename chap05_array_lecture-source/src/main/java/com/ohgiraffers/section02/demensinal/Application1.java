@@ -37,7 +37,7 @@ public class Application1 {
         // heep영역에는 값이 없는 상태로 공간 생성이 불가능하기 때분에 기본값이 들어있다.
 
         // arr[0]에 있는 배열 값을 출력
-        for(int i=0; i <arr2[0].length; i++){
+        for(int i=0; i <arr2[0].length; i++){  // arr2[i].length 5열
             System.out.print(arr2[0][i]+ "");
         }
         System.out.println();
@@ -51,10 +51,13 @@ public class Application1 {
             System.out.print(arr2[2][i]+ "");
         }
         System.out.println();
+        // 3개의 칸에 5개 줄줄이가 있는 것.
+        // 위의 식은 [3] [5] ==> [0] [5]/ [1][5] / [2][5] 를 돌리는 것. 이를 이중 포문과 이차원 배열로
+
 
         System.out.println("======== 이중 for 문으로 이차원배열 출력 =====");
-        for(int j = 0; j < arr2.length; j ++) {
-            for(int i = 0; i < arr2[j].length; i++) {
+        for(int i = 0; i < arr2.length; i ++) {  // 5열 을
+            for(int j = 0; j < arr2[i].length; j++) {   // arr2   3칸만큼 반복
                 System.out.print(arr2[j][i] + " ");
             }
             System.out.println();
