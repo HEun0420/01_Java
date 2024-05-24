@@ -34,6 +34,9 @@ public class Application {
             System.out.print(iarr[i] + " ");
         }
 
+        System.out.println();
+
+
         // 클래스 자료형
         Rectangle r1 = new Rectangle(12.5, 22.5);
 
@@ -44,5 +47,15 @@ public class Application {
         r1.calcArea(); // 넓이 출력
         r1.calcRound(); // 둘레 출력
 
+        // 가변인자
+        //pt.testVariableLengthArrayParameter();
+        pt.testVariableLengthArrayParameter("홍길동"); // 가변인자가 전달되지 않아도 괜찮음
+        pt.testVariableLengthArrayParameter("홍길동", "볼링"); // 1개 가능
+        pt.testVariableLengthArrayParameter("홍길동", "볼링", "당구"); //2개도 가능
+        pt.testVariableLengthArrayParameter("신사임당", new String[] {"테니스", "서예"}); // 배열도 가능
+
+
     }
+
+
 }

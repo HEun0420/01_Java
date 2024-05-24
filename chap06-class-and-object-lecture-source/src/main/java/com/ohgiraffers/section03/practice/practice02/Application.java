@@ -14,7 +14,7 @@ public class Application {
 
         System.out.println(cl1.getInfo());
 
-        cl1.setMerry(true);
-        cl1.setChild(true);
+        cl1.setMerry(1);
+        cl1.setChild(3);
     }
 }

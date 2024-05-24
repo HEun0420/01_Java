@@ -9,8 +9,8 @@ public class Class1 {
     private int age2;
     private String name2;
     private String gene;
-    private boolean isMerry;
-    private boolean isChild;
+    private int isMerry;
+    private int isChild;
 
 
     public void setAge2(int age2) {
@@ -32,27 +32,28 @@ public class Class1 {
 
     }
 
-    public void setMerry(boolean isMerry) {
-        System.out.println("이 사람은 결혼을 했습니까? true/false로 대답해주세요.");
+    public void setMerry(int isMerry) {
         Scanner sc= new Scanner(System.in);
-        String str = sc.nextLine();
-        if (str ) {
-            this.isMerry = true;
+        System.out.println("이 사람은 결혼을 했습니까?");
+         this.isMerry =isMerry;
+        if (isMerry== 1) {
             System.out.println(" 이 사람은 결혼을 했다.");
-        } else {
-            System.out.println("잘못된 정보 입니다.");
+        } else if(isMerry==2) {
+            System.out.println("이 사람은 결혼을 안했다.");
+        } else if (isMerry==3) {
+            System.out.println("모른다.");
         }
     }
 
-    public void setChild(boolean isChild) {
-        System.out.println("이 사람은 자식이 있습니까? true/false로 대답해주세요.");
+
+    public void setChild(int isChild) {
         Scanner sc= new Scanner(System.in);
-        String str = sc.nextLine();
-        if (isChild) {
-            this.isChild = true;
-            System.out.println(" 자식이 세 명 있다.");
-        } else {
-            System.out.println("잘못된 정보 입니다.");
+        System.out.println("이 사람은 자식이 있습니까?");
+        this.isChild = isChild;
+        if (isChild > 0) {
+            System.out.println(" 자식이 "+ isChild +"명 있다.");
+        } else if(isChild ==0) {
+            System.out.println("자식이 없습니다.");
         }
 
     }
