@@ -15,28 +15,28 @@ public class Class1 {
 
     public void setAge2(int age2) {
         this.age2 = age2;
-        System.out.println("이 사람의 나이는 " + this.age2 + "이고, ");
     }
 
     public void setName(String name2) {
         this.name2 = name2;
-        System.out.println("이 사람의 이름은 " + this.name2 + "살 이다.");
     }
 
 
     public void setGene(String gene) {
         this.gene = gene;
-        System.out.println("이 사람의 성별은 " + this.gene + "이며 ");
     }
 
     public String getInfo() {
-        return this.age2 + this.name2 + this.gene;
+        return "이 사람의 나이는 " + this.age2 + "이고, "+ "이 사람의 이름은 " +
+                this.name2 + "살 이다."+"이 사람의 성별은 " + this.gene + "이다 ";
 
     }
-    Scanner sc= new Scanner(System.in);
 
-    public void isMerry(boolean isMerry) {
-        if (isMerry) {
+    public void setMerry(boolean isMerry) {
+        System.out.println("이 사람은 결혼을 했습니까? true/false로 대답해주세요.");
+        Scanner sc= new Scanner(System.in);
+        String str = sc.nextLine();
+        if (str ) {
             this.isMerry = true;
             System.out.println(" 이 사람은 결혼을 했다.");
         } else {
@@ -44,7 +44,10 @@ public class Class1 {
         }
     }
 
-    public void isChild(boolean isChild) {
+    public void setChild(boolean isChild) {
+        System.out.println("이 사람은 자식이 있습니까? true/false로 대답해주세요.");
+        Scanner sc= new Scanner(System.in);
+        String str = sc.nextLine();
         if (isChild) {
             this.isChild = true;
             System.out.println(" 자식이 세 명 있다.");
