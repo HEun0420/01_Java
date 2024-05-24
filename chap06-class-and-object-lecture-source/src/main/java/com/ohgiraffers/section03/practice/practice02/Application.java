@@ -9,12 +9,12 @@ public class Application {
 
         Class1 cl1 = new Class1();
         cl1.setName("James");
-        cl1.setAge2(30);
+        cl1.setAge(30);
         cl1.setGene("남자");
 
         System.out.println(cl1.getInfo());
 
-        cl1.setMerry(1);
+        cl1.setMarry(1);
         cl1.setChild(3);
     }
 }

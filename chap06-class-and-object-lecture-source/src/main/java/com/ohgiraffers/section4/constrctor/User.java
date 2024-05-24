@@ -45,7 +45,6 @@ public class User {
 
         System.out.println("User 클래스의 기본 생성자 호출함...");
     }
-
     public String getInfo() {
         return "User [id=" + this.id + ", pwd=" + this.pwd + ", " +
                 "name=" + this.name + ", enrollDate=" + this.enrollDate + "]";

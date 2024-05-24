@@ -42,7 +42,7 @@ public class UserDTO {
 
     /*
      * 설정자(setter) 와 접근자(getter) -> 모든 필드에 대해 만들어야하고 public으로 만들어야함.
-     * */
+     * */ // alt+ insert 하면 생산자가 나와서 선택하면 셋팅이 쫙 된다.
     public String getId() {
         return id;
     }
