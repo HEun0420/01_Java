@@ -24,7 +24,27 @@ public class Application {
         * 2. 게으른 초기화 (Lazy Initialization)
          */
 
-        EagerSingletion eager = new EagerSingletion();
+//        EagerSingletion eager = new EagerSingletion();
+
+        EagerSingletion eager1 = EagerSingletion.getInstance();
+        EagerSingletion eager2 = EagerSingletion.getInstance();
+
+        System.out.println("eager1의 hashCode : " + eager1.hashCode());
+        System.out.println("eager2의 hashCode : " + eager2.hashCode());
+
+        // 2. 게으른 초기화
+        LazySingleton lazy1 = LazySingleton.getInstance();
+        LazySingleton lazy2 = LazySingleton.getInstance();
+
+        System.out.println("lazy1의 hashCode : " + lazy1.hashCode());
+        System.out.println("lazy2의 hashCode : " + lazy2.hashCode());
+
+        /*
+        * 이른 초기화를 사용하면 처음 인스턴스 반환 요청에서 속도가 빠르다.
+        * 하지만 클래스를 로드하는 속도가 느리다. 요청에 대한 속도가 두 번째 요청에 대한
+         * 속도보다 느리다.
+         * 하지만 클래스를 로드하는 속도는 빠르다.
+         */
 
 
     }
