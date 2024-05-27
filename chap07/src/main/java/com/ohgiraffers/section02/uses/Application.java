@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class Application {
 
     public static void main(String[] args) {
+
         /*
          * 여러명의 정보를 받아와서 등록
          * 등록한거를 객체 배열로 저장
@@ -34,13 +35,14 @@ public class Application {
 
             switch (no) {
                 case 1 : memberService.signUpMembers(); break;
-                case 2 : break;
+                case 2 : memberService.showAllMembers(); break;
                 case 9 :
                     System.out.println("프로그램을 종료합니다."); return;
                 default:
                     System.out.println("잘못된 번호를 입력하셨습니다.");
             }
         }
+
     }
 
 }
