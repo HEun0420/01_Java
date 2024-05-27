@@ -12,9 +12,13 @@ public class Application {
         cl1.setAge(30);
         cl1.setGene("남자");
 
+
+        cl1.setMarry2(1);
+        cl1.setChild2(3);
         System.out.println(cl1.getInfo());
 
-        cl1.setMarry(1);
-        cl1.setChild(3);
+        cl1.setMarry(true);
+        cl1.setChild(true);
+
     }
 }

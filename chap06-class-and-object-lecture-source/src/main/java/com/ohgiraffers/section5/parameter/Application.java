@@ -20,19 +20,19 @@ public class Application {
         // 기본자료형 8가지 모두 가능 ( byte, short, int , long, float, double, char, boolean)
         int num = 20;
 
-        pt.testPrimaryTypeParameter(num);
+        pt.testPrimaryTypeParameter(num); // 20
 
 
         // 기본자료형 배열을 매개변수로 전달 받는 메소드 호출 확인
-        int[] iarr = new int[] {1, 2, 3, 4, 5};
+        int[] iarr = new int[] {1, 2, 3, 4, 5}; // 12345
 
         System.out.println("인자로 전달하는 값 : " + iarr);
-        pt.testPrimaryTypeArrayParameter(iarr);
+        pt.testPrimaryTypeArrayParameter(iarr);    // 99 2 3 4 5
 
         System.out.println("변경후 원본 배열의 값 출력");
         for(int i = 0; i < iarr.length; i ++) {
             System.out.print(iarr[i] + " ");
-        }
+        } // 99 2 3 4 5
 
         System.out.println();
 
@@ -40,8 +40,8 @@ public class Application {
         // 클래스 자료형
         Rectangle r1 = new Rectangle(12.5, 22.5);
 
-        System.out.println("인자로 전달하는 값 : " + r1);
-        pt.testClassTypeParameter(r1);
+        System.out.println("인자로 전달하는 값 : " + r1); //인자로 전달하는 값 : com.ohgiraffers.section5.parameter.Rectangle@72ea2f77
+        pt.testClassTypeParameter(r1); //매개변수로 전달받은 값 com.ohgiraffers.section5.parameter.Rectangle@72ea2f77
 
         System.out.println("==========변경 후 원본 사각형의 넓이와 둘레 ==========");
         r1.calcArea(); // 넓이 출력
