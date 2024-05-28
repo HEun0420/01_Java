@@ -16,8 +16,30 @@ public class SubClass extends SuperClass {
 //    public void method(String name){} // 타입 변경
 //    public void method(int num, int num2) {} // 갯수 변경
 
+    //4. 메소드 이름, 리턴타입, 매개변수 갯수, 매개면수 타입
+    @Override
+    public void method(int num){}
 
+    //5. private 메소드는 오버라이딩 불가
+//    @oeverriding
+//    private void pivvated method(){}
 
+    // 6. final 메소드 오버라이딩 불가 -> 변경이 불가능하기 때문에
+//    @Override
+//    public final void finalMethod(){}
+
+    //7. 부모 메소드의 접근제한자 같거나 더 넓은 범위로 오버라이딩 가능
+//    @Override
+//    void protectedMethod() {} // 더 좁은 범위로는 불가능
+
+//    @Override
+//    protected void protectMethod(){} // 같은 범위로는 불가능
+
+        @Override
+    public void protectedMethod(){ }// 더 넓은 범위로 가능
+
+    // 클래스에서도 final 키워드를 추가할 수 있는데,
+    // 이는 상속을 제한하는 키워드이다.
 
 
 
