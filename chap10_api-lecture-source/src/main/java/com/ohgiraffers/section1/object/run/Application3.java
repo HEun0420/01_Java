@@ -6,7 +6,7 @@ public class Application3 {
     public static void main(String[] args) {
         /*
         * Object 클래스의 명세에 작성된 일반 규약에 따르면
-        * equals() 메소드를 재정하는 경우 hashCode() apthemeh wowjddml gkehfhr ehldjdlTek.
+        * equals() 메소드를 재정하는 경우 hashCode() 메소드도 재정의 하도록 되어있다.
         * ==> 같은 값을 가지는 동등 객체는 같은 해쉬코드 값을 가져야 한다는 규약
         * (강제성은 없지만 규약대로 해주는게 좋다)
          */

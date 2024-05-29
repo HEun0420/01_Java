@@ -30,4 +30,4 @@ public class Application3 {
             String str2 = 123 + "";
         }
     }
-}
+

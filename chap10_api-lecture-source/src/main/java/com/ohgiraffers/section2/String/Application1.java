@@ -10,7 +10,11 @@ public class Application1 {
         String str1 = "apple";
         for (int i = 0; i < str1.length(); i++) {
             System.out.println("charAt(" + i + ") = "+ str1.charAt(i));
-        }
+        } //charAt(0) = a
+//        charAt(1) = p
+//        charAt(2) = p
+//        charAt(3) = l
+//        charAt(4) = e
 
         /*
          * compareTo() : 인자로 전달된 문자열과 사전 순으로 비교하여
@@ -23,22 +27,22 @@ public class Application1 {
         String str5 = "oracle";
 
         // 같으면 0반환
-        System.out.println("compareTo() = " + str2.compareTo(str3));
+        System.out.println("compareTo() = " + str2.compareTo(str3)); // 0
 
         // 대문자와 소문자 차이는 32
-        System.out.println("compareTo() = " + str2.compareTo(str4));
-        System.out.println("compareTo() = " + str4.compareTo(str2));
+        System.out.println("compareTo() = " + str2.compareTo(str4));  // 32
+        System.out.println("compareTo() = " + str4.compareTo(str2));  // -32
 
 
         // compareToIgnoreCase() : 대소문자 구분하지 않고 비교
-        System.out.println("compareToIgnoreCase() = " + str3.compareToIgnoreCase(str4));
+        System.out.println("compareToIgnoreCase() = " + str3.compareToIgnoreCase(str4)); // 0
 
         /*
          * concat() : 문자열에 인자로 전달된 문자열을 합치기해서 새로운 문자열을 반환
          * 원본 문자열에는 영향을 주지 않는다.
          * */
-        System.out.println("concat() = " + (str2.concat(str5))); // "java" + "oracle"
-        System.out.println("str2 = " + str2);
+        System.out.println("concat() = " + (str2.concat(str5))); // "java" + "oracle" javaoracle
+        System.out.println("str2 = " + str2); //java
 
         /*
          * indexOf() : 문자열에서 특정 문자를 탐색하여 처음 일치하는 인덱스 위치를 정수형으로 반환
@@ -96,15 +100,15 @@ public class Application1 {
          * length() : 문자열의 길이를 정수형으로 반환한다.
          * 길이가 0인 문자열은 null과는 다르다.
          * */
-        System.out.println("length() : " + javaoracle.length());
-        System.out.println("빈문자열 : " + "".length());
+        System.out.println("length() : " + javaoracle.length()); // 10
+        System.out.println("빈문자열 : " + "".length()); // 0
 
         /*
          * isEmpty() : 문자열의 길이가 0이면 true를 반환, 아니면 false를 반환
          * 길이가 0인 문자열은 null과는  다르다.
          * */
-        System.out.println("isEmpty() = " + "".isEmpty());
-        System.out.println("isEmpty() = " + "abc".isEmpty());
+        System.out.println("isEmpty() = " + "".isEmpty()); //true
+        System.out.println("isEmpty() = " + "abc".isEmpty()); //false
 
         // 에러발생
 //        String nullStr = null;
