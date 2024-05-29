@@ -27,16 +27,21 @@ public class Application3 {
             System.out.println("empArr1[" + i + "] :"+ empArr1[i]);
         }
 
-        System.out.println("===================empArr2===========");
+        System.out.println("===================empArr2===========");     // 마지막 값 출력 x
         for (int i =0; i< empArr2.length; i++){
             System.out.println("empArr2[" + i + "] :"+ empArr2[i]);
         }
 
-        System.out.println("===================empArr1===========");
+        System.out.println("===================empArr3===========");         // 마지막 값 출력 x
         for (int i =0; i< empArr3.length; i++){
             System.out.println("empArr3[" + i + "] :"+ empArr3[i]);
         }
 
+        String[] empArr4 = emp3.split(",",-1);
+        System.out.println("===================empArr4===========");         // 마지막 값 출력 x
+        for (int i =0; i< empArr4.length; i++){
+            System.out.println("empArr4[" + i + "] :"+ empArr4[i]);
+        }
 
 
 
