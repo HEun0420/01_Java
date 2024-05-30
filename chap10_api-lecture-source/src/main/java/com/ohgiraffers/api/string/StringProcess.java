@@ -13,6 +13,25 @@ public class StringProcess {
 //        newStr += newStr.substring(1);
 //        return newStr;
     }
+    /*
+    * 다른 풀이
+     */
+//// 1.문자열을 넘겨받아, 첫글자를 대문자로 바꾸는 메서드 작성 +preChar(String s): String
+//    public String preChar(String s) {
+//
+//        return s.substring(0, 1).toUpperCase() + s.substring(1);
+//
+//    }
+//
+//    // 1.문자열을 넘겨받아, 첫글자를 대문자로 바꾸는 메서드 작성 +preChar(String s): String
+//    public String preChar2(String s) {
+//
+//        char[] c = s.toCharArray();
+//
+//        if(c[0]>='a' && c[0]<='z')
+//            c[0] = (char)(c[0]-32);
+//
+//        return new String(c);
 
 
     public int charSu(String s2, char c) {
