@@ -4,6 +4,7 @@ import com.ohgiraffers.chap08_Ingerit.hw1.model.dto.EmployeeDTO;
 import com.ohgiraffers.chap08_Ingerit.hw1.model.dto.StudentDTO;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class Application {
     public static void main(String[] args) {
@@ -36,12 +37,19 @@ public class Application {
         eDTO[0]= em1;
         eDTO[1]= em2;
 
-
-        while (){
-           if()
-            for (int i=0; i< sDTO.length; i++){
+        while() {
+            for (int i = 0; i < sDTO.length; i++) {
                 System.out.println(sDTO[i].toString());
+
+            }
         }
+
+        System.out.println("인원을 더 추가하실건가요? 1. Yes / 2. No");
+        Scanner sc=new Scanner(System.in);
+        sc.nextInt();
+
+        // j++
+        //
 
 
 

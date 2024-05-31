@@ -2,6 +2,8 @@ package com.ohgiraffers.section02;
 
 import com.ohgiraffers.section01.exception.ExceptionTest;
 
+import java.util.Scanner;
+
 public class Application1 {
     public static void main(String[] args) {
 
@@ -14,8 +16,17 @@ public class Application1 {
          */
 
         ExceptionTest et = new ExceptionTest();
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("물건의 가격을 입력해주세요 : ");
+        int price = sc.nextInt();
+
+        System.out.println("소지하고 있는 돈을 입력해주세요: ");
+        int money=sc.nextInt();
+
+
         try {
-            et.checkEnoughMoney(10000,50000);
+            et.checkEnoughMoney(price,money);
         } catch (Exception e){
 
             e.printStackTrace();
