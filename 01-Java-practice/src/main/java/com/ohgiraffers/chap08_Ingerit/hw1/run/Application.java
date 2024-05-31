@@ -27,6 +27,7 @@ public class Application {
         sDTO[1]=student2;
         sDTO[2]=student3;
 
+        System.out.println("==============학생 조회=================");
         for (int i=0; i< sDTO.length; i++){
             System.out.println(sDTO[i].toString());
         }
@@ -37,19 +38,51 @@ public class Application {
         eDTO[0]= em1;
         eDTO[1]= em2;
 
-        while() {
-            for (int i = 0; i < sDTO.length; i++) {
-                System.out.println(sDTO[i].toString());
 
+        System.out.println("==========임원 조회==========");
+//        while(true) {
+//            for (int j = 0; j < eDTO.length; j++) {
+//                System.out.println(eDTO[j].toString());
+//            } if (==null)break;
+//        }
+
+        while(true) {
+            Scanner sc = new Scanner(System.in);
+
+            System.out.println("이름을 입력해주세요.");
+            String name = sc.nextLine();
+
+            System.out.println("나이를 입력해주세요.");
+            int age = sc.nextInt();
+
+            System.out.println("키를 입력해주세요.");
+            int height = sc.nextInt();
+
+            System.out.println("몸무게를 입력해주세요.");
+            int weight = sc.nextInt();
+
+            System.out.println("급여를 입력해주세요.");
+            int salary = sc.nextInt();
+
+            sc.nextLine();
+            System.out.println("부서를 입력해주세요.");
+            String department = sc.nextLine();
+
+            int j = 2;
+            eDTO[j] = new EmployeeDTO(name, age, height, weight, salary, department);
+            j++;
+
+            System.out.println("계속 추가하시겠습니까? 1. Yes  2. No");
+            int answer = sc.nextInt();
+            if (answer==2){
+                break;
             }
         }
 
-        System.out.println("인원을 더 추가하실건가요? 1. Yes / 2. No");
-        Scanner sc=new Scanner(System.in);
-        sc.nextInt();
 
-        // j++
-        //
+
+
+
 
 
 
