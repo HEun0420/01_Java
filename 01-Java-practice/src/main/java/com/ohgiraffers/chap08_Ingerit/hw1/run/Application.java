@@ -37,14 +37,9 @@ public class Application {
         EmployeeDTO em2 = new EmployeeDTO("강동원",38,182.0,76.0,200000000,"기획부");
         eDTO[0]= em1;
         eDTO[1]= em2;
-
+        int j = 2;
 
         System.out.println("==========임원 조회==========");
-//        while(true) {
-//            for (int j = 0; j < eDTO.length; j++) {
-//                System.out.println(eDTO[j].toString());
-//            } if (==null)break;
-//        }
 
         while(true) {
             Scanner sc = new Scanner(System.in);
@@ -68,7 +63,7 @@ public class Application {
             System.out.println("부서를 입력해주세요.");
             String department = sc.nextLine();
 
-            int j = 2;
+
             eDTO[j] = new EmployeeDTO(name, age, height, weight, salary, department);
             j++;
 
