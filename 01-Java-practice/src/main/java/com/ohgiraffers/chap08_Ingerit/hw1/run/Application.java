@@ -1,9 +1,11 @@
 package com.ohgiraffers.chap08_Ingerit.hw1.run;
 
+import com.ohgiraffers.chap08_Ingerit.hw1.model.Exception.ageNegativeException;
+import com.ohgiraffers.chap08_Ingerit.hw1.model.Exception.heightNegativeException;
+import com.ohgiraffers.chap08_Ingerit.hw1.model.Exception.weightNegativeException;
 import com.ohgiraffers.chap08_Ingerit.hw1.model.dto.EmployeeDTO;
 import com.ohgiraffers.chap08_Ingerit.hw1.model.dto.StudentDTO;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Application {
@@ -39,7 +41,8 @@ public class Application {
         eDTO[1]= em2;
         int j = 2;
 
-        System.out.println("==========임원 조회==========");
+
+        System.out.println("==========사원 입력==========");
 
         while(true) {
             Scanner sc = new Scanner(System.in);
@@ -67,6 +70,11 @@ public class Application {
             eDTO[j] = new EmployeeDTO(name, age, height, weight, salary, department);
             j++;
 
+            ExceptionTest et = new ExceptionTest();
+            try {
+                et.checkInt(age,weight,height);
+            } catch (Exception e) {
+
             System.out.println("계속 추가하시겠습니까? 1. Yes  2. No");
             int answer = sc.nextInt();
             if (answer==2){
@@ -74,11 +82,16 @@ public class Application {
             }
         }
 
+        System.out.println("사원 조회 ");
+//        System.out.println(Arrays.toString(eDTO));
 
-
-
-
-
+        for(j = 0; j < eDTO.length; j++){
+            if (eDTO[j] != null){
+                System.out.println(eDTO[j].toString());
+            } else{
+                break;
+            }
+        }
 
 
     }

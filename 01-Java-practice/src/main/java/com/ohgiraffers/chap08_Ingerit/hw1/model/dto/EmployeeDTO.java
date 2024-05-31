@@ -29,6 +29,6 @@ public class EmployeeDTO extends PersonDTO {
 
     @Override
     public String toString() {
-        return super.toString() + ", salary= "+ salary+ ", department" + department;
+        return super.toString() + ", salary= "+ salary+ ", department=" + department;
     }
 }
