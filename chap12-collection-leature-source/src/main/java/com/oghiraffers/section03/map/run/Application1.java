@@ -32,5 +32,28 @@ public class Application1 {
         hMap.put("one", new Date());
         hMap.put(12, "red apple");
         hMap.put(33,123);
+
+        System.out.println("hMap: " + hMap);
+
+        // 중복 확인
+        // 같은 키값에 value를 다르게 하게되면 덮어씌워진다.
+        hMap.put(12,"yellow apple");
+        System.out.println("hMap: " + hMap);
+
+        // 값 중복 확인
+        hMap.put(12,"yellow apple");
+        hMap.put(13,"yellow apple");
+        hMap.put(14,"yellow apple");
+
+        System.out.println("hMap: " + hMap);
+
+        // remove() -> 삭제
+        hMap.remove(13);
+        hMap.remove(14);
+
+        System.out.println("hMap: " + hMap);
+
+        // 저장된 객체 수 확인
+        System.out.println("hMap에 저장된 객체 수: " + hMap.size());
     }
 }
