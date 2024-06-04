@@ -19,7 +19,7 @@ public class Run {
 
             CharCheckException ccE = new CharCheckException();
             try {
-                ccE.ccException();
+                ccE.ChracterProcess("Hello World");
             } catch (Exception e) {
         }
         }

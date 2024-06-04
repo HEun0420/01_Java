@@ -20,6 +20,7 @@ public class CharacterProcess {
             if (s.charAt(i) > 96 & s.charAt(i) < 123) {
                 count++;
             } else if (s.charAt(i) > 64 & s.charAt(i) < 91) {
+                count++;
             }
         }
             return count;
