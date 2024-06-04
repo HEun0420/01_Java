@@ -10,17 +10,25 @@ public class Run {
         //   `countAlpha` 메소드로 문자열 전달하고, 실행결과 받아 출력함.
         //    반드시 try ~ catch 문 사용.
         //  에러메시지 : "체크할 문자열 안에 공백 포함할 수 없습니다."
+//        new Run().test1(); // 밑과 동일 여튼.
+        Run run =new Run();
+        run.test1();
+
+    }
 
         public void test1(){
-            CharacterProcess cp = new CharacterProcess();
-            Scanner sc = new Scanner();
-            sc.nextInt();
-            cp.countAlpha("Hello World");
+            Scanner sc = new Scanner(System.in);
+            System.out.println("문자열을 입력하세요: ");
+            try {
+                String s = sc.nextLine();
+                CharacterProcess cp = new CharacterProcess();
+                System.out.println(cp.countAlpha(s));
 
             CharCheckException ccE = new CharCheckException();
-            try {
+
                 ccE.ChracterProcess("Hello World");
             } catch (Exception e) {
+                System.out.println(" 잘못입력했다.");
         }
         }
 
