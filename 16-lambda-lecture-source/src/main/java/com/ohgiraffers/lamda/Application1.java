@@ -6,6 +6,8 @@ import java.time.LocalDateTime;
 import java.util.Scanner;
 import java.util.Set;
 import java.util.TreeSet;
+import java.util.function.Consumer;
+import java.util.function.Function;
 import java.util.function.IntSupplier;
 import java.util.function.Supplier;
 
@@ -57,11 +59,14 @@ public class Application1 {
     private void test2() {
 
 //         자동 정렬하기 위해 TreeSet 사용
-        Supplier<Set<Integer>> lotto = () ->{
-            Set<Integer> lotte = new TreeSet<>();
-
-
-        }
+        Supplier<Set<Integer>> lotto = () -> {
+            Set<Integer> set = new TreeSet<>();
+            while (set.size() < 6) {
+                set.add((int) ((Math.random() * 45) + 1));
+            }
+            return set;
+        };
+        System.out.println("Lotto= " + lotto.get());
     }
 
     /**
@@ -71,9 +76,12 @@ public class Application1 {
      * 현재 1달러는 1350원이다.
      * </pre>
      */
-    private void test3(double d1, double d2) {
-        OuterCalculator.Divisaion divisaion1 = (x, y) -> x/ y;
-        System.out.println((double) );
+    private void test3() {
+ Consumer<Double> consumer = (Double won) -> {
+double rate = 1350;
+double dollar = won / rate;
+     System.out.println("$ : " + dollar);
+ }; consumer.accept(180250324.0);
     }
 
     /**
@@ -82,15 +90,9 @@ public class Application1 {
      * 위 문제를 jdk가 제공하는 Function 함수형인터페이스 형식에 맞게 변형하세요.
      * </pre>
      */
-    private void test4(int a, int b) {
+    private void test4() {
+        ToDou
 
-        OuterCalculator.Divisaion divisaion = (x, y) -> x/ y;
-
-        @FunctionalInterface
-        interface Division{
-            int divisionTwoNumber (double a , double b);
-        }
-        System.out.println((double) divisaion.division(13500,1350));
     }
 
     /**
