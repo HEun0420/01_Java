@@ -1,15 +1,8 @@
-package com.ohgiraffers.lamda;
-
-import com.ohgiraffers.section01.Intro.OuterCalculator;
+package com.ohgiraffers.lamdaTest;
 
 import java.time.LocalDateTime;
-import java.util.Scanner;
-import java.util.Set;
-import java.util.TreeSet;
-import java.util.function.Consumer;
-import java.util.function.Function;
-import java.util.function.IntSupplier;
-import java.util.function.Supplier;
+import java.util.*;
+import java.util.function.*;
 
 public class Application1 {
     public static void main(String[] args) {
@@ -23,7 +16,7 @@ public class Application1 {
         app.test3();
         System.out.println();
         System.out.println("function interface 환율");
-        app.test4(13800,1350);
+        app.test4();
         System.out.println();
         app.test5();
     }
@@ -58,6 +51,12 @@ public class Application1 {
      */
     private void test2() {
 
+        /*
+        * Set 특징: 중복저장이 허용되지 않음
+        * TreeSet 특징: 자동정렬
+        * 컬렉션 -> 컬렉션에서 다룰 수 있는 데이터는 기본적으로 객체만 가능 -> Integer를 사용한 이유
+         */
+
 //         자동 정렬하기 위해 TreeSet 사용
         Supplier<Set<Integer>> lotto = () -> {
             Set<Integer> set = new TreeSet<>();
@@ -91,8 +90,12 @@ double dollar = won / rate;
      * </pre>
      */
     private void test4() {
-        ToDou
-
+        Function<Integer, Double> calc = won ->{
+            double rate = 1300;
+            return won / rate;
+        };
+        double dollar = calc.apply(3000);
+        System.out.println(dollar);
     }
 
     /**
@@ -103,8 +106,43 @@ double dollar = won / rate;
      * </pre>
      */
     private void test5() {
-//        List<String> strList = Arrays.asList("abc", "", "대한민국", "   ");
+//      리스트 만드는 방법 1.
+//        List<String> strList1 = new ArrayList<>();
+//        strList1.add("abc");
+//        strList1.add("");
+//        strList1.add("대한민국");
+//        strList1.add("    ");
 
+       // 리스트 만드는 방법 2.
+//        Arrays.asList() : 나열된 값을 리스트로 만들어준다.
+//        asList()로 만든 리스트의 경우, 컬렉션 프레임워크가 아닌 Arrays 클래스 내부의
+//        Static inner class로 만들어진다 -> 추가 .삭제 불가능 / 변경만 가능
+        List<String> strList = Arrays.asList("abc", "", "대한민국", "   "); // 위와 동일
+        List<String> strAsListTest = Arrays.asList("1","2");
+        // strAsList.add("3"); // unsupportedOperationException 발생
+        // strAsList.clear(); // unsupportedOperationException 발생
+        //
+
+//        리스트 만드는 방법 3.
+//        List.of () : 팩토리 메소드, 나열된 값을 리스트로 만들어준다.
+//        List.of () 로 만든 리스트는 ImmutableCollections 객체의 내부클래스인 ListN 클래스로 List를 생성
+//        -> 추가, 삭제 불가능 / 변경만 가능하다.
+        List<String> strListOfTest = List.of ("1", "2");
+//        strListOfTest.add("3"); //  unsupportedOperationException 발생
+//        strListOfTest.clear();
+//
+
+        /*
+        * List.of() , Arrays.asList() -> 추가, 삭제 불가능하게 한 이유
+        * 불변객체이어야 다른 컬렉션으로 변황이 용이하기 때문
+         */
+
+        // 공백을 제외한 문자열의 길이가 0인지
+        Predicate<String> strLe0 = str -> str.trim().length()==0;
+
+        for (String str : strList){
+            System.out.println(str + "은 문자열의 길이가 0입니까?"+ strLe0.test(str));
+        }
     }
     }
 
