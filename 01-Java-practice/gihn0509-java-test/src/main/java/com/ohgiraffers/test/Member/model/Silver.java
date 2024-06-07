@@ -5,8 +5,11 @@ public class Silver extends Member{
         super(name, grade, point);
     }
 
+    protected double rateSilver = 0.02;
+
     @Override
-    public void calculateInterest(double cal) {
-        super.calculateInterest(cal);
+    public double calculateInterest(double cal) {
+        double v3 = rateSilver * getPoint();
+        return v3;
     }
 }

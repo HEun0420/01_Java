@@ -35,7 +35,18 @@ public abstract class Member {
     public void setPoint(int point) {
         this.point = point;
     }
-    public void calculateInterest(double cal){
 
+    public double calculateInterest(double cal) {
+        if (this instanceof Gold) {
+            return point * ((Gold) this).rateGold;
+        } else if (this instanceof Silver) {
+            return point * ((Silver) this).rateSilver;
+        } else if (this instanceof Vip) {
+            return point * ((Vip) this).rateVip;
+        }
+        return cal;
     }
+
+
 }
+

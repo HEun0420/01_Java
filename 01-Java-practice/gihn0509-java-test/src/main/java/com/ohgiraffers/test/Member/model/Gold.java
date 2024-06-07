@@ -6,10 +6,12 @@ public class Gold extends Member{
     }
 
 
+    protected double rateGold = 0.05;
 
     @Override
-    public void calculateInterest(double cal) {
-        super.calculateInterest(cal);
+    public double calculateInterest(double cal) {
+        double v2 = rateGold * getPoint();
+        return v2;
     }
 
 

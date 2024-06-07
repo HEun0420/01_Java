@@ -5,8 +5,11 @@ public class Vip extends Member{
         super(name, grade, point);
     }
 
+    protected double rateVip = 0.1;
+
     @Override
-    public void calculateInterest(double cal) {
-        super.calculateInterest(cal);
+    public double calculateInterest(double cal) {
+        double v1 = rateVip * getPoint();
+        return v1;
     }
 }
